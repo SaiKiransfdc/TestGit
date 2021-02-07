@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_rollup__c</fullName>
+    <description>testing the roll-up summary</description>
+    <externalId>false</externalId>
+    <label>Test rollup</label>
+    <summaryForeignKey>Skill_set__c.EMPLOYEE__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
