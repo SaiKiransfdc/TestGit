@@ -13,6 +13,7 @@ public with sharing class AccController {
     public static Account  getContact() {
         return [select Id, Name from account Limit 1];
         System.debug("Hello Am Sai Kiran AKula");
+         System.debug("Hello Am Sai");
     }
 
 }
