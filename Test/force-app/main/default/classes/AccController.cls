@@ -11,9 +11,8 @@
 public with sharing class AccController {
     @AuraEnabled
     public static Account  getContact() {
+        system.debug ('Hello Am Sai Kiran AKula');
+         system.debug ('Hello Am Sai');
         return [select Id, Name from account Limit 1];
-        System.debug("Hello Am Sai Kiran AKula");
-         System.debug("Hello Am Sai");
+        }
     }
-
-}
