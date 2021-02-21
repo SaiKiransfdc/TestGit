@@ -4,6 +4,9 @@
         <members>*</members>
         <name>ApexClass</name>
     </types>
-    
+     <types>
+        <members>AccExample</members>
+        <name>Flow</name>
+    </types>
     <version>50.0</version>
 </Package>
