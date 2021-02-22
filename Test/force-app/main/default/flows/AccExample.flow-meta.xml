@@ -24,6 +24,12 @@
         </value>
     </processMetadataValues>
     <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
         <name>OriginBuilderType</name>
         <value>
             <stringValue>LightningFlowBuilder</stringValue>
@@ -33,9 +39,12 @@
     <recordCreates>
         <name>CreateRec</name>
         <label>CreateRec</label>
-        <locationX>482</locationX>
+        <locationX>588</locationX>
         <locationY>87</locationY>
         <assignRecordIdToReference>accIds</assignRecordIdToReference>
+        <connector>
+            <targetReference>TestAcc</targetReference>
+        </connector>
         <inputAssignments>
             <field>Name</field>
             <value>
@@ -44,10 +53,29 @@
         </inputAssignments>
         <object>Account</object>
     </recordCreates>
+    <recordLookups>
+        <description>Simple attaching the element here</description>
+        <name>TestAcc</name>
+        <label>TestAcc</label>
+        <locationX>767</locationX>
+        <locationY>87</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountNumber</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CreateRec</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <screens>
         <name>Account</name>
         <label>Account</label>
-        <locationX>284</locationX>
+        <locationX>390</locationX>
         <locationY>69</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
