@@ -36,6 +36,11 @@
                 <default>false</default>
                 <label>SalesForce</label>
             </value>
+            <value>
+                <fullName>Guideware</fullName>
+                <default>false</default>
+                <label>SalesForce</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
